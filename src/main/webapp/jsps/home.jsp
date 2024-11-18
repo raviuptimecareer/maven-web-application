@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Uptime Career.Hubli. Maharasthra,India</h1>
-<h1 align="center"> Sciprted Pipeline Project. qa branch</h1>
+<h1 align="center"> Sciprted Pipeline Project. This is qa branch</h1>
 <h2 align="center"> Real Time Scenario-2</h2>
 <h3 align="center"> Satya</h3>
 <hr>
