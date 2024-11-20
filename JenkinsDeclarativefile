@@ -18,7 +18,6 @@ stage('Build the Code'){
                  steps{
                 sh "mvn clean package"
         }
-                 
         }
         //Execute sonarqube Report
         stage('Generate Sonareqube Report'){
