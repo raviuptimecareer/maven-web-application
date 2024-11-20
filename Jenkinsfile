@@ -1,6 +1,5 @@
 node{
-    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3')), pipelineTriggers([cron('* * * * *')])])
-    def mavenHome = tool name: 'maven-3.9.6'
+/*    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3')), pipelineTriggers([cron('* * * * *')])])*/    def mavenHome = tool name: 'maven-3.9.6'
  stage('CheckoutCode'){
   git branch: 'development', changelog: false, credentialsId: '58ee9fff-c7eb-4a8a-afdf-5ef16ed7b243', poll: false, 
   url: 'https://github.com/raviuptimecareer/maven-web-application.git'
