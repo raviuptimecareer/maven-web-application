@@ -14,6 +14,7 @@
 <h1 align="center"> Today we learn about the build triggers(pollSCM,Build Periodically, Github-Webhook ...)</h1>
 <h2 align="center"> Real Time Scenario-2. Teaches by Haressh sir new batch</h2>
 <h2 align="center"> Real Time Scenario-2. Scripted pipeline with scp private key like scp -o on 20th nov 2024 with mail notification</h2>
+<h2 align="center"> Declarative pipeline task is done</h2>
 <h3 align="center">Regards..... Ravikala Raveendra</h3>
 <hr>
 <br>
