@@ -13,7 +13,7 @@
 <h1 align="center"> Sciprted Pipeline Project</h1>
 <h2 align="center"> Real Time Scenario-2</h2>
 <h2 align="center"> This is Flipkart-Development Branch</h2>
-<h3 align="center"> Scriptedpipeline with scp -o ssh agent task on nov 20th 2024 and properties of set job done</h3>
+<h3 align="center"> Scriptedpipeline with scp -o ssh agent task on nov 20th 2024 task of properties of set job done</h3>
 <h3 align="center"> Satya Sir</h3>
 <h3 align="center"> Raveendra</h3>
 <hr>
