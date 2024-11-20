@@ -18,6 +18,7 @@ stage('Build the Code'){
                  steps{
                 sh "mvn clean package"
         }
+                 
         }
         //Execute sonarqube Report
         stage('Generate Sonareqube Report'){
@@ -39,15 +40,24 @@ stage('Build the Code'){
             }
         }
         }
+		}//stages closing
 //Email Notification
-stage('Email Notification'){
-steps{
+post{
+success{
 mail bcc: '', body: '''Hi team...
 the entire code qa and testing done.
 code is ready to move deploy
 regards
-ravikala raveendra''', cc: '', from: '', replyTo: '', subject: 'build is over', to: 'ganeshsunchu1990@gmail.com'
+ravikala raveendra''', cc: '', from: '', replyTo: '', subject: 'build is success', to: 'ganeshsunchu1990@gmail.com'
+     }
+failure{
+mail bcc: '', body: '''Hi team...
+the entire code qa and testing done.
+code is ready to move deploy
+regards
+ravikala raveendra''', cc: '', from: '', replyTo: '', subject: 'build is failure', to: 'ganeshsunchu1990@gmail.com'
      }
 }
-}//stages closing
+
 }//pipeline closing
+
