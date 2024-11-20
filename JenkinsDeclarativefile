@@ -40,15 +40,22 @@ stage('Build the Code'){
             }
         }
         }
+		}//stages closing
 //Email Notification
-stage('Email Notification'){
-steps{
+post{
+success{
 mail bcc: '', body: '''hi guys...
-the declarative pipeline build is complete..
+the declarative pipeline build is success.
 code ready to move deploy
 regards
 raviakala raveendra''', cc: '', from: '', replyTo: '', subject: 'build done complete', to: 'ravindra.ravikala.1236@gmail.com'
 }
+failure{
+mail bcc: '', body: '''hi guys...
+the declarative pipeline build is failure.
+regards
+raviakala raveendra''', cc: '', from: '', replyTo: '', subject: 'build done complete', to: 'ravindra.ravikala.1236@gmail.com'
 }
-     }//stages closing
+}    
 }//pipeline closing
+
