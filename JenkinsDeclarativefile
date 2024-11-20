@@ -33,7 +33,7 @@ stage('Build the Code'){
             }
         }
         //Deploy App Into App Server
-        Stage('Deploy App Into App Server'){
+        stage('Deploy App Into App Server'){
             steps{
      sshagent(['ce6b46e3-ba8a-45cb-8146-1644067cd75e']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.232.112:/opt/tomcat9/webapps"
