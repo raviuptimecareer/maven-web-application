@@ -19,7 +19,7 @@ sshagent(['42b59a53-2b45-4a7b-9c55-e1342fad6653']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.232.112:/opt/tomcat9/webapps"
 }
 }
-stage('Email Notification'){
+stage('Send Email Notifications'){
 mail bcc: '', body: '''Hi, Welcome touptime career...!
 Thank you....
 Regards
