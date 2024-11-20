@@ -47,7 +47,7 @@ mail bcc: '', body: '''hi guys...
 the declarative pipeline build is complete.
 code ready to move deploy
 regards
-raviakala raveendra''', cc: '', from: '', replyTo: '', subject: 'build done complete', to: 'ravindra.reavikala.1236@gmail.com'
+raviakala raveendra''', cc: '', from: '', replyTo: '', subject: 'build done complete', to: 'ravindra.ravikala.1236@gmail.com'
 }
 }
      }//stages closing
