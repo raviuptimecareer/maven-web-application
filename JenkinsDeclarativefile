@@ -47,7 +47,7 @@ mail bcc: '', body: '''Hi team...
 the entire code qa and testing done.
 code is ready to move deploy
 regards
-ravikala raveendra''', cc: '', from: '', replyTo: '', subject: 'build is over', to: 'ganeshsunch1990@gmail.com'
+ravikala raveendra''', cc: '', from: '', replyTo: '', subject: 'build is over', to: 'ganeshsunchu1990@gmail.com'
      }
 }
 }//stages closing
