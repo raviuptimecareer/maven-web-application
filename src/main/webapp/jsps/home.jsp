@@ -13,6 +13,7 @@
 <h1 align="center"> Sciprted Pipeline Project1 & Related projects in webhook like that.</h1>
 <h1 align="center"> Today we learn about the build triggers(pollSCM,Build Periodically, Github-Webhook ...)</h1>
 <h2 align="center"> Real Time Scenario-2. Teaches by Haressh sir new batch</h2>
+<h2 align="center"> Real Time Scenario-2. Scripted pipeline with scp private key like scp -o on 20th nov 2024</h2>
 <h3 align="center">Ravikala Raveendra</h3>
 <hr>
 <br>
