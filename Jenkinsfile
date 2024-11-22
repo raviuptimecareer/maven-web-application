@@ -1,4 +1,4 @@
-node{
+node('node123'){
  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '6', daysToKeepStr: '', numToKeepStr: '6')), pipelineTriggers([pollSCM('* * * * *')])])
  def mavenHome = tool name : 'maven-3.9.6'
  stage('CheckoutSourceCode'){
@@ -16,7 +16,7 @@ node{
  }
  stage('Deploy App Into Tomcat'){
 sshagent(['42b59a53-2b45-4a7b-9c55-e1342fad6653']) {
-  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.232.112:/opt/tomcat9/webapps"
+  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.179.107:/opt/tomcat9/webapps"
 }
 }
 stage('Send Email Notifications'){
