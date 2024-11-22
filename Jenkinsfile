@@ -4,6 +4,7 @@ node{
   git branch: 'development', changelog: false, credentialsId: '58ee9fff-c7eb-4a8a-afdf-5ef16ed7b243', poll: false, 
   url: 'https://github.com/raviuptimecareer/maven-web-application.git'
  }
+ 
  stage('BuildArtifact'){
  sh "${mavenHome}/bin/mvn clean package"
  }
