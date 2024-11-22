@@ -14,11 +14,12 @@ node('node123'){
  stage('UploadArtifact Into Nexus'){
  sh "${mavenHome}/bin/mvn clean deploy"
  }
- stage('Deploy App Into Tomcat'){
+/* stage('Deploy App Into Tomcat'){
 sshagent(['42b59a53-2b45-4a7b-9c55-e1342fad6653']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.179.107:/opt/tomcat9/webapps"
 }
 }
+*/
 stage('Send Email Notifications'){
 mail bcc: '', body: '''Hi, Welcome touptime career...!
 Thank you....
