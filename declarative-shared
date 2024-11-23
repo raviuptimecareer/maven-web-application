@@ -1,0 +1,24 @@
+@Library ("ms-shared-library")_
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                helloWorld()
+                helloWorldd()
+            }
+        }
+        stage('banner') {
+            steps {
+                baneerGreeting()
+            }
+        }
+        stage('welcome') {
+            steps {
+                welcome("Sharwani")
+            }
+        }
+        
+    }
+}
